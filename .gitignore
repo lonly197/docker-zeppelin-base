@@ -1,4 +1,4 @@
-vscode/
-idea/
-tmp/*
+.vscode/
+.idea/
+tmp/
 *.tmp

@@ -22,9 +22,12 @@ RUN	set -x \
     ## fix 'ERROR: http://dl-cdn.alpinelinux.org/alpine/v3.6/main: BAD archive'
     && echo http://mirrors.aliyun.com/alpine/v3.6/main/ >> /etc/apk/repositories \
     && echo http://mirrors.aliyun.com/alpine/v3.6/community/>> /etc/apk/repositories \
+    ## update apk package
     && apk update \
+    ## add base package
     && apk add --no-cache --upgrade bash curl ca-certificates openssl wget rsync jq openjdk8 \
     && update-ca-certificates \
+    ## mkidr work dir
     && mkdir -p ${ZEPPELIN_HOME} \
     ## download zeppelin package
     && curl ${DIST_MIRROR}/zeppelin-${VERSION}/zeppelin-${VERSION}-bin-all.tgz | tar xvz -C ${ZEPPELIN_HOME} \
@@ -34,5 +37,13 @@ RUN	set -x \
     && rm -rf *.tgz \
     && rm -rf /var/cache/apk/* \
     && rm -rf /tmp/nativelib
+
+EXPOSE 8080 8443
+
+VOLUME ${ZEPPELIN_HOME}/conf \
+	${ZEPPELIN_HOME}/logs \
+	${ZEPPELIN_HOME}/notebook \
+	${ZEPPELIN_HOME}/local-repo \
+	${ZEPPELIN_HOME}/helium
 
 WORKDIR ${ZEPPELIN_HOME}

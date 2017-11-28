@@ -4,7 +4,7 @@ This is a basic [docker](https://www.docker.com/what-docker) image for building 
 
 # Official Documentation and Guides
 
-- [Overview](http://zeppelin.apache.org/docs/0.7.03)
+- [Overview](http://zeppelin.apache.org/docs/0.7.3)
 - [Quick Start](http://zeppelin.apache.org/docs/0.7.3/install/install.html)
 - [Interpreters](http://zeppelin.apache.org/docs/0.7.3/manual/interpreters.html)
 - [Wiki](https://cwiki.apache.org/confluence/display/ZEPPELIN/Zeppelin+Home)

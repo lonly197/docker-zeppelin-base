@@ -1,13 +1,26 @@
-# docker-zeppelin-base
+# <img src="https://zeppelin.apache.org//assets/themes/zeppelin/img/zeppelin_logo.png" style="margin-top: -6px;" width="50" alt="I'm zeppelin"> docker-zeppelin-base
 
 This is a basic [docker](https://www.docker.com/what-docker) image for building [docker-zeppelin](http://github.com/lonly197/docker-zeppelin) and [docker-zeppelin-cn](http://github.com/lonly197/docker-zeppelin-cn)
 
-# Official Documentation and Guides
+# Overview
 
-- [Overview](http://zeppelin.apache.org/docs/0.7.3)
-- [Quick Start](http://zeppelin.apache.org/docs/0.7.3/install/install.html)
-- [Interpreters](http://zeppelin.apache.org/docs/0.7.3/manual/interpreters.html)
-- [Wiki](https://cwiki.apache.org/confluence/display/ZEPPELIN/Zeppelin+Home)
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin:0.7.3.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.3.svg) __0.7.3  = latest__
+
+# Exposed ports
+
+- 8080 - Zeppelin web application port
+- 8443 - Zeppelin web application secure port
+
+# Volumes
+
+All below volumes can be mounted to docker host machine folders or shared folders to easy maintain data inside them. 
+
+Zeppelin-specific:
+- /opt/zeppelin/conf
+- /opt/zeppelin/logs
+- /opt/zeppelin/notebook
+- /opt/zeppelin/local-repo
+- /opt/zeppelin/helium
 
 # Contect me
 

@@ -1,4 +1,4 @@
-# <img src="https://zeppelin.apache.org//assets/themes/zeppelin/img/zeppelin_logo.png" style="margin-top: -6px;" width="50" alt="I'm zeppelin"> docker-zeppelin-base
+# docker-zeppelin-base
 
 This is a basic [docker](https://www.docker.com/what-docker) image for building [docker-zeppelin](http://github.com/lonly197/docker-zeppelin) and [docker-zeppelin-cn](http://github.com/lonly197/docker-zeppelin-cn)
 

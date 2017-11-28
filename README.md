@@ -22,6 +22,6 @@ Zeppelin-specific:
 - /opt/zeppelin/local-repo
 - /opt/zeppelin/helium
 
-# Contect me
+# Contact me
 
 - Email: <lonly197@qq.com>

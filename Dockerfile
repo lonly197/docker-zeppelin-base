@@ -1,7 +1,7 @@
 FROM alpine:3.6
 
 ARG DIST_MIRROR=http://archive.apache.org/dist/zeppelin
-ARG VERSION=0.7.3
+ARG VERSION=0.7.2
 
 LABEL \
     maintainer="lonly197@qq.com" \

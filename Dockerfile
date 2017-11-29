@@ -2,6 +2,8 @@ FROM alpine:3.6
 
 ARG DIST_MIRROR=http://archive.apache.org/dist/zeppelin
 ARG VERSION=0.7.2
+ARG BUILD_DATE
+ARG VCS_REF
 
 LABEL \
     maintainer="lonly197@qq.com" \
@@ -10,10 +12,14 @@ LABEL \
     org.label-schema.license="Apache License 2.0" \
     org.label-schema.name="lonly/docker-zeppelin-base" \
     org.label-schema.url="https://github.com/lonly197" \
+    org.label-schema.description="This is a basic docker image for building docker-zeppelin and building docker-zeppelin-cn." \
+    org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.vcs-url="https://github.com/lonly197/docker-zeppelin-base" \
     org.label-schema.vcs-type="Git" \
+    org.label-schema.vendor="lonly197@qq.com" \
     org.label-schema.version=$VERSION \
-    org.label-schema.vcs-url="https://github.com/lonly197/docker-zeppelin-base"
-
+    org.label-schema.schema-version="1.0"
+    
 ENV	ZEPPELIN_HOME=/opt/zeppelin \
     JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk \
     PATH=$PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
